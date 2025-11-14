@@ -45,6 +45,8 @@ async function run() {
       const result = await eventCollection.deleteOne(query);
       res.send(result);
     })
+   
+
      app.post('/venue', async(req, res)=>{
       const venueEvent = req.body;
       console.log(venueEvent);
